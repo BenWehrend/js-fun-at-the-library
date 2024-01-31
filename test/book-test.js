@@ -12,11 +12,14 @@ var {
 
 describe("book.js", function () {
   describe("createTitle", function() {
-    it.skip("should be a function", function () {
+    skip("should be a function", function () {
       assert.isFunction(createTitle);
     });
 
-    it.skip("should take in a title and return a modified title", function () {
+    function createTitle(title) {
+      return `The ${title}`;
+    }
+    it("should take in a title and return a modified title", function () {
       var bookIdea = createTitle("Storm's Awakening");
 
       assert.equal(bookIdea, "The Storm's Awakening");
