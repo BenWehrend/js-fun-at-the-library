@@ -87,10 +87,18 @@ console.log(bookRecentlyRead(false));
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
 
+var books = {
+  title1: 'Harry Potter 3',
+  title2: 'Harry Potter 4',
+  title3: 'Harry Potter 5',
+  title4: 'Harry Potter 6',
+  title5: 'Harry Potter 7',
+}
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
 
+console.log(books['title3']);
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
