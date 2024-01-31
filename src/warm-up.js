@@ -58,14 +58,28 @@ function shortStoryTest(pagesTotal) {
 // the statement 'I could read that in a day!', otherwise, log the statement 
 // 'Ok, maybe I could read that in a day and a half'
 
-
+function speedReading(pagesNum) {
+  if (pagesNum < 1000) {
+    return 'I could read that in a day!';
+  }  else {
+    return 'Ok, maybe I could read that in a day and a half.';
+  }
+}
+//console.log(speedReading(100));
 
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite book is [title]!'. Otherwise, log the
 // statement 'I recently read the [title] book'. In either case, the value stored in
 // the "title" variable should be included in the logged statement.
 
-
+function bookRecentlyRead(isFavorite) {
+  if (isFavorite === true) {
+    return `My favorite book is ${title}`;
+  }  else {
+    return `I recently read ${title}`;
+  }
+}
+console.log(bookRecentlyRead(false));
 
 //------------------------- Arrays -------------------------//
 
