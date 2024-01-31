@@ -36,13 +36,25 @@ describe("book.js", function () {
       assert.equal(ghostTitle, "The Teenage Ghoul");
     });
   });
+  
+   function buildMainCharacter(name, age, pronouns) { 
+    return {
+      name: name,
+      age: age,
+      pronouns: pronouns,
+    }
+  }
+
+  module.exports = {
+    buildMainCharacter: buildMainCharacter,
+  }
 
   describe("buildMainCharacter", function() {
-    it.skip("should be a function (comment the function back into the module.exports object in book.js)", function () {
+    it("should be a function (comment the function back into the module.exports object in book.js)", function () {
       assert.isFunction(buildMainCharacter);
     });
 
-    it.skip("should create a character object", function () {
+    it("should create a character object", function () {
       var ghoulCharacter = buildMainCharacter("Vassya", 16, "she/her");
       var bakerCharacter = buildMainCharacter("Hannah", 30, "she/her");
 
