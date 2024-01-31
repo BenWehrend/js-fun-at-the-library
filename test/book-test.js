@@ -45,15 +45,10 @@ describe("book.js", function () {
     }
   }
 
-module.exports = {
-    buildMainCharacter: function(name, age, pronouns) {
-    return {
-      name: name,
-      age: age,
-      pronouns: pronouns,
-      }
-    }
+  module.exports = {
+    buildMainCharacter: buildMainCharacter,
   }
+
 
   describe("buildMainCharacter", function() {
     it("should be a function (comment the function back into the module.exports object in book.js)", function () {
