@@ -45,8 +45,14 @@ describe("book.js", function () {
     }
   }
 
-  module.exports = {
-    buildMainCharacter: buildMainCharacter,
+module.exports = {
+    buildMainCharacter: function(name, age, pronouns) {
+    return {
+      name: name,
+      age: age,
+      pronouns: pronouns,
+      }
+    }
   }
 
   describe("buildMainCharacter", function() {
