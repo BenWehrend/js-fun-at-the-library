@@ -49,7 +49,7 @@ function shortStoryTest(pagesTotal) {
         return false;
     }
 }
-//console.log(shortStoryTest(24))
+console.log(shortStoryTest(24))
 
 //------------------------- Conditionals -------------------------//
 
@@ -65,7 +65,7 @@ function speedReading(pagesNum) {
     return 'Ok, maybe I could read that in a day and a half.';
   }
 }
-//console.log(speedReading(100));
+console.log(speedReading(100));
 
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite book is [title]!'. Otherwise, log the
@@ -115,6 +115,14 @@ console.log(belowTwoHundred[4]);
 // keys: name, and hasThesaurus. The value for name should the string 'Webster's', and
 // the value for hasThesaurus should be false
 
+var dictionary = {
+  name: "Webster's",
+  hasThesaurus: false,
+}
+
 
 // Write the code to add the key of pageCount, with the value of 720. Use dot
 // notation to do this. DO NOT modify your code from above.
+
+dictionary.pageCount = 720;
+//console.log(dictionary)
