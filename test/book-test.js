@@ -15,10 +15,6 @@ describe("book.js", function () {
     skip("should be a function", function () {
       assert.isFunction(createTitle);
     });
-
-    function createTitle(title) {
-      return `The ${title}`;
-    }
     
     it("should take in a title and return a modified title", function () {
       var bookIdea = createTitle("Storm's Awakening");
