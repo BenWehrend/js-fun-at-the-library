@@ -81,7 +81,7 @@ describe("library.js", function() {
   });
 
   describe("checkoutBook", function() {
-    it.skip("should unshelf a book to check out a book to a patron", function() {
+    it("should unshelf a book to check out a book to a patron", function() {
       var dracula = {
         title: "Dracula",
         mainCharacter: { name: "Count Dracula", age: undefined, pronouns: "he/him" },
@@ -135,7 +135,7 @@ describe("library.js", function() {
 
   describe('takeStock', function() {
 
-    it.skip('should be able to take stock of how many books are on a shelf', function() {
+    it('should be able to take stock of how many books are on a shelf', function() {
       var hyperion = {
         title: "Hyperion",
         mainCharacter: { name: "The Shrike", age: null, pronouns: "they" },
@@ -166,7 +166,7 @@ describe("library.js", function() {
       assert.equal(takeStock(auroraLibrary, 'fantasy'), "There are a total of 2 fantasy books at the Aurora Public Library.")
     });
 
-    it.skip('should be able to count the number of books on a different shelf', function() {
+    it('should be able to count the number of books on a different shelf', function() {
       var bornACrime = {
         title: "Born a Crime",
         mainCharacter: { name: "Trevor Noah", age: 36, pronouns: "he/him" },
@@ -180,7 +180,7 @@ describe("library.js", function() {
       assert.equal(takeStock(laLibrary, 'nonFiction'), "There are a total of 1 nonFiction books at the Los Angeles Public Library.")
     });
 
-    it.skip('should be able to take stock of how many books are in the entire collection if a specific shelf is not specified', function() {
+    it('should be able to take stock of how many books are in the entire collection if a specific shelf is not specified', function() {
       var dracula = {
         title: "Dracula",
         mainCharacter: { name: "Count Dracula", age: undefined, pronouns: "he/him" },
