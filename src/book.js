@@ -30,7 +30,7 @@ function saveReview(reviewMessage, reviews) {
 // saveReview function has 2 parameters
 // checks if reviewMessage is not included in reviews array and pushes if true
 
-// let saveReview = (reviewMessage, reviews) => {
+// const saveReview = (reviewMessage, reviews) => {
 //   if ( !reviews.includes(reviewMessage )) {
 //     reviews.push(reviewMessage);
 //   }
@@ -40,7 +40,7 @@ function calculatePageCount(bookTitle) {
   return bookTitle.length * 20;
 };
 
-// let calculatePageCount = bookTitle => bookTitle.length * 20;
+// const calculatePageCount = bookTitle => bookTitle.length * 20;
 
 function writeBook(title, character, genre) {
   return {
@@ -51,13 +51,13 @@ function writeBook(title, character, genre) {
   }
 };
 
-// let writeBook = (t, mC, g) => ({title: t, mainCharacter: mC, genre: g, pageCount: calculatePageCount(t)})
+// const writeBook = (t, mC, g) => ({title: t, mainCharacter: mC, genre: g, pageCount: calculatePageCount(t)})
 
 function editBook(book) {
   book.pageCount = book.pageCount * .75;
 };
 
-// let editBook = book => book.pageCount = book.pageCount * .75;
+// const editBook = book => book.pageCount = book.pageCount * .75;
 
 module.exports = {
   createTitle,
