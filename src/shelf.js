@@ -15,9 +15,7 @@ function unshelfBook(title, shelf) {
   } 
 };
 
-// const unshelfBook = (title, shelf) => {
-//   for (var i = 0; i < shelf.length; i++) { if (shelf[i].title === title) shelf.splice(i, 1)} return;
-// }
+// const unshelfBook = (title, shelf) => { for (var i = 0; i < shelf.length; i++) { if (shelf[i].title === title) shelf.splice(i, 1)} return; };
 
 function listTitles(shelf) {
   var bookList = "";
@@ -38,6 +36,8 @@ function searchShelf(shelf, title) {
   } 
   return false;
 };
+
+// const searchShelf = (shelf, title) => { for (var i = 0; i < shelf.length; i++) { if (shelf[i].title === title) { return true } } return false;
 
 
 module.exports = {
