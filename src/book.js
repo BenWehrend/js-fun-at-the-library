@@ -3,7 +3,9 @@ function createTitle(title) {
 };
 
 // found arrow function method, but left original solutions
-// let createTitle = title => `The ${title}`;
+
+// creates function (createTitle) sets parameter(title) returns interpolated message (`The ${title}`)
+// const createTitle = title => `The ${title}`;
 
 function buildMainCharacter(name, age, pronouns) {
   return {
@@ -13,7 +15,8 @@ function buildMainCharacter(name, age, pronouns) {
   }
 };
 
-// let buildMainCharacter = (name, age, pronouns) => ({name, age, pronouns});
+// mainCharacter function that creates an object
+// const buildMainCharacter = (name, age, pronouns) => ({name, age, pronouns});
 
 function saveReview(reviewMessage, reviews) {
   for (var i = 0; i < reviews.length; i++) {
@@ -24,10 +27,13 @@ function saveReview(reviewMessage, reviews) {
   reviews.push(reviewMessage);
 };
 
-// let saveReview = (reviewMessage, reviews) => {
-//   let reviewsIndex = reviews.findIndex(message => message === reviewMessage);
-//     if (reviewsIndex === -1) {
-//       reviews.push(reviewMessage);
+// saveReview function has 2 parameters
+// reviews.indexOf checks to see if elemeent (reviewMessage) exists in array
+// if -1 returned, then review isn't in array so is therefore unique and is pushed onto reviews array
+
+// const saveReview = (reviewMessage, reviews) => {
+//   if (reviews.indexOf(reviewMessage) === -1) {
+//     reviews.push(reviewMessage);
 //   }
 // };
 
