@@ -18,6 +18,7 @@ function buildMainCharacter(name, age, pronouns) {
 // mainCharacter function that creates an object
 // const buildMainCharacter = (name, age, pronouns) => ({name, age, pronouns});
 
+// checks entire length of reviews array, one by one, to see if reviewMessage === reviews, return nothing if true
 function saveReview(reviewMessage, reviews) {
   for (var i = 0; i < reviews.length; i++) {
     if (reviews[i] === reviewMessage) {
