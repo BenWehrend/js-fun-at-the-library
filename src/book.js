@@ -2,7 +2,7 @@ function createTitle(title) {
   return `The ${title}`
 };
 
-// found arrow function method, but left original solutions
+// found arrow function method. updated book, library, and shelf using it. I still left my original solutions
 
 // creates function (createTitle) sets parameter(title) returns interpolated message (`The ${title}`)
 // const createTitle = title => `The ${title}`;
@@ -28,11 +28,10 @@ function saveReview(reviewMessage, reviews) {
 };
 
 // saveReview function has 2 parameters
-// reviews.indexOf checks to see if elemeent (reviewMessage) exists in array
-// if -1 returned, then review isn't in array so is therefore unique and is pushed onto reviews array
+// checks if reviewMessage is not included in reviews array and pushes if true
 
-// const saveReview = (reviewMessage, reviews) => {
-//   if (reviews.indexOf(reviewMessage) === -1) {
+// let saveReview = (reviewMessage, reviews) => {
+//   if ( !reviews.includes(reviewMessage )) {
 //     reviews.push(reviewMessage);
 //   }
 // };
