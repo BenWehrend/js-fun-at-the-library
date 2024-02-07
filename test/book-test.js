@@ -12,7 +12,7 @@ var {
 
 describe("book.js", function () {
   describe("createTitle", function() {
-    skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(createTitle);
     });
     
